@@ -43,8 +43,8 @@ Santa Monica College
 - Google Data Analytics Professional
 
 
-**SKILL PROFICIENCIES AND PROGRAMMING LANGUAGES
-**<br>
+**SKILL PROFICIENCIES AND PROGRAMMING LANGUAGES**
+<br>
 - Leaflet
 - ArcGIS Suite
 - Map Box
