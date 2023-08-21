@@ -7,7 +7,7 @@ categories:
   - website
 ---
 
-[Cerro San Luis](/assets/cerro-san-luis.png)
+![Cerro San Luis](/assets/cerro-san-luis.png)
 
 Step 1: Cleanse your lidar
 
@@ -28,7 +28,7 @@ Next step is to output a file with just the ground points. We can use the transl
 pdal translate in.las out.las -f range --filters.range.limits="Classification[2:2]"
 {% endhighlight %}
 
-[Tree Removal](/assets/tree-classification.gif)
+![Tree Removal](/assets/tree-classification.gif)
 
 
 __________
@@ -58,7 +58,7 @@ Then run the pipeline via command line using PDAL2:
 pdal pipeline -i dtm.json
 {% endhighlight %}
 
-
+![](/assets/cerro-san-luis-vol.png)
 
 
 __________
