@@ -37,7 +37,7 @@ Step 2: Clip your data
 
 I arbitrarily clipped Cerro San Luis Obispo Mountain to elevations at or above 145m, using the contours as a guideline. I ended up converting the point cloud into a raster with PDAL's pipeline function. (The raster helps extract contours). Here's the pipeline I used:
 
-{% highlight json %}
+{% highlight c %}
 [
     "cerro_san_luis_ground_only.laz",
     {
