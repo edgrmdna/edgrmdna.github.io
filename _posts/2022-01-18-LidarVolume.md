@@ -58,10 +58,8 @@ Then run the pipeline via command line using PDAL2:
 pdal pipeline -i dtm.json
 {% endhighlight %}
 
-![](/assets/cerro-san-luis-vol.png)
-
-
 __________
 Step 4: Calculate the Volume
 
 At this point, CloudCompare has a function called 'Compute 2.5 D Volume'. Specify your base height and a report will display the calculations. I went ahead and made a map to show my results:
+![](/assets/cerro-san-luis-vol.png)
