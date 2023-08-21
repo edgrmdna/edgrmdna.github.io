@@ -36,7 +36,8 @@ Santa Monica College
 - GEOG 318 Applications in Geographic Information Systems
 - GEOG 440 Advanced Applications in GIS
 - GEOG 414 Global and Regional Climatology
-- GEOG 415 Meteorology	●	CS 1 Problem Solving and Program Design Using C++
+- GEOG 415 Meteorology
+- CS 1 Problem Solving and Program Design Using C++
 - CS 2 Introduction to Data Structures
 - CS 30 Advanced Programming in C++
 - CS 14 Introduction to Programming with Python
