@@ -162,4 +162,4 @@ for index, row in food_df.iterrows():
         continue
 food_df.to_csv('./geocoded_restaurants.csv')
 ```
-![Map](https://api.mapbox.com/styles/v1/edgrmdna/cj0vm27w700c82slf0e5apkbi.html?title=false&amp;access_token=pk.eyJ1IjoiZWRncm1kbmEiLCJhIjoiRV8wRG1URSJ9.-Gjqcw0AmLxIaGP10UuGqg&amp;zoomwheel=false#2.33/36.27/-97.24)
+[Map](https://api.mapbox.com/styles/v1/edgrmdna/cj0vm27w700c82slf0e5apkbi.html?title=false&amp;access_token=pk.eyJ1IjoiZWRncm1kbmEiLCJhIjoiRV8wRG1URSJ9.-Gjqcw0AmLxIaGP10UuGqg&amp;zoomwheel=false#2.33/36.27/-97.24)
