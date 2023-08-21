@@ -1,9 +1,9 @@
-EDGAR MEDINA                                                                         
+**EDGAR MEDINA**                                                                         
 edgrmdna@gmail.com | www.edgarmedina.xyz
 
-PROFESSIONAL EXPERIENCE 
-________________________________________
-GIS ANALYST (2016 - PRESENT)
+**PROFESSIONAL EXPERIENCE** 
+<br>
+**GIS ANALYST** (2016 - PRESENT)
 INDOORVU/GEOCAM, LOS ANGELES, CALIFORNIA
 -	Work with a variety of spatial and non-spatial data including shapefiles, geodatabases, rasters, json, csv, CAD
 -	Develop methods for spatial analysis that include extracting statistics from both vector and raster outputs, site selection analysis, and other complex calculations.
@@ -15,15 +15,15 @@ INDOORVU/GEOCAM, LOS ANGELES, CALIFORNIA
 -	Provide technical support, troubleshooting assistance, oversite, and training for internal team, partners, and clients with varying levels of GIS experience
 -	Audit existing processes for efficiency and identify areas of improvement Research and implement new tools and workflows, maintain internal and client-facing technical documentation.
 
-GIS AND FORESTRY INTERN (2015 – 2016)
+**GIS AND FORESTRY INTERN** (2015 – 2016)
 CALFIRE, LOS OSOS, CA
   - Sampled flora throughout San Luis Obispo County in California. Measured the flora’s water moisture content and results were submitted to the National Fuel Moisture Database.
 - Surveyed forests in Cambria, CA to quantify tree mortality rates and measure the forest floor’s potential for fire fuel in preparation for the fire season.
 - Produced suppression repair maps to assess post-wildfire damage using Fire Incident Mapping Tools (FIMT) via ArcMap.
 - Collaborated on maintaining a county-wide building dataset using Java OpenStreetMap (JOSM) to edit geometries and attributes.
 
-EDUCATION 
-________________________________________
+**EDUCATION**
+<br>
 B.S. Anthropology and Geography                                                                                     
 California Polytechnic State University San Luis Obispo
 
@@ -31,8 +31,8 @@ A.S. Computer Science
 Santa Monica College
 
 
-RELEVANT COURSEWORK AND CERTIFICATES
-________________________________________
+**RELEVANT COURSEWORK AND CERTIFICATES**
+<br>
 - GEOG 318 Applications in Geographic Information Systems
 - GEOG 440 Advanced Applications in GIS
 - GEOG 414 Global and Regional Climatology
@@ -43,8 +43,8 @@ ________________________________________
 - Google Data Analytics Professional
 
 
-SKILL PROFICIENCIES AND PROGRAMMING LANGUAGES
-________________________________________
+**SKILL PROFICIENCIES AND PROGRAMMING LANGUAGES
+**<br>
 - Leaflet
 - ArcGIS Suite
 - Map Box
