@@ -1,0 +1,165 @@
+---
+title:  "Scraping FN Addresses"
+mathjax: true
+layout: post 
+categories: 
+  - github
+  - website
+---
+**Scraping**
+The geocoding script uses google api to get latitude and longitude from an address. The csv from the previous script gets dumped to a pandas dataframe that gets updated with the lat/long values. It then gets dumped out to a separate csv.
+scrape.py
+<br>
+```
+from urllib.request import Request, urlopen
+from bs4 import BeautifulSoup as soup
+from pathlib import Path
+import csv
+import os
+
+base_url = 'https://www.foodnetwork.com/restaurants/shows/diners-drive-ins-and-dives/a-z/p/'
+# Function
+def scraper(some_url, csv_file):
+    # Offload the content into a variable
+    print(some_url)
+    page = Request(some_url, headers={'User-Agent': 'Mozilla/5.0'})
+    my_page = urlopen(page)
+    dump = my_page.read()
+    # Close that page
+    my_page.close()
+
+    # html parser dump
+    my_soup = soup(dump, "html.parser")
+    # Adds all containers to a list
+    text_container = my_soup.findAll("div", {"class":"m-MediaBlock__m-TextWrap"})
+    # Access Web Address Text: weblink = text_container[0].a["href"]
+
+    # Name Container:
+    name_container = my_soup.findAll("span", 
+                                    {"class":"m-MediaBlock__a-HeadlineText"})
+    # Access Name Text: name = name_container[0].text
+
+    # Address Container:
+    address_container = my_soup.findAll("div",{"class":"m-Info__a-Address"})
+    # Access Address Text: address_text = address_container[0].text 
+
+    # Description Container: 
+    description_container = my_soup.findAll("div", 
+                                           {"class":"m-MediaBlock__a-Description"})
+    # Access Description text: description = description_container[0].text
+    #print(text_container)
+    #print(address_container)
+
+    i = 0
+    csv_writer = csv.writer(f, delimiter=',')
+    while i < len(address_container):
+        line=[]
+        description = description_container[i].text.split('.')[0] + '.' 
+        address = address_container[i].text + ','
+        # Name
+        line.append(str(name_container[i].text))
+        # Address
+        line.append(address.strip())
+        # Website
+        line.append(text_container[i].a["href"])
+        # Description
+        line.append(description.strip())
+        #csv_file.write(line)
+        csv_writer.writerow(line)
+        i += 1
+
+def main():
+    # Open file and write header
+    f = open(str(os.getcwd()) + '\\restaurants.csv', "w", newline='',encoding="UTF-8")
+    f.write("name,address,website,description\n")
+    # Loop through all pages
+    p = 1
+    while p < 83:
+        my_url = base_url + str(p)
+        p += 1
+        scraper(my_url, f)
+    f.close()
+
+if __name__ == "__main__":
+    main()
+```
+
+**Geocoding**
+geocode.py
+
+```
+import urllib.request, urllib.parse, urllib.error
+import pandas as pd
+import json
+import ssl
+import csv
+
+#Goog Geocoding API
+api_key = 'YOUR API KEY'
+serviveUrl = 'https://maps.googleapis.com/maps/api/geocode/json?'
+#Certificate handling
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+    
+def geocode(addy):
+#while True:
+    address = addy
+    #API Parameters: api, address:
+    try:
+        g_param_dict = {}
+        g_param_dict['key'] = api_key
+        g_param_dict['address'] = address
+        #parses location and address. Location converted to URL query
+        url = serviveUrl + urllib.parse.urlencode(g_param_dict)
+    except:
+        return -1
+    print('Retrieving', url)
+
+    #Open URL with urllib.request.urlopen()
+    u = urllib.request.urlopen(url)
+
+    #Decode urllib.request.urlopen() object with .decode method
+    data = u.read().decode()
+    #Try/Except block in case it fails to load or URL is bad
+    try:
+        js = json.loads(data)
+    except:
+        js = None
+
+    if not js or 'status' not in js or js['status'] != 'OK':
+        print('--FAILURE TO RETRIEVE---')
+        return
+
+    #Prints pretty JSON
+    #print(json.dumps(js, indent=2))
+    #Pull data from JS
+    info = []
+    lat = js['results'][0]['geometry']['location']['lat']
+    lng = js['results'][0]['geometry']['location']['lng']
+    info.append(lat)
+    info.append(lng)
+    info.append(js['results'][0]['formatted_address'])
+    print('lat', lat, 'lng', lng)
+    # info = [lat,lon,address]
+    return info
+
+# Create pandas dataframe to hold the csv from previous script
+food_df = pd.read_csv("restaurants_8BOM.csv")
+# Insert new lat and lon columns
+food_df.insert(2,"lat", -1)
+food_df.insert(3,"lng", -1)
+
+for index, row in food_df.iterrows():
+    try:
+        location = geocode(row['address'])
+        food_df.loc[index, 'lat'] = location[0]
+        food_df.loc[index, 'lng'] = location[1]
+        food_df.loc[index, 'address'] = location[2]
+        print (location)
+    except:
+        print("continuing")
+        continue
+food_df.to_csv('./geocoded_restaurants.csv')
+```
+![Map](https://api.mapbox.com/styles/v1/edgrmdna/cj0vm27w700c82slf0e5apkbi.html?title=false&amp;access_token=pk.eyJ1IjoiZWRncm1kbmEiLCJhIjoiRV8wRG1URSJ9.-Gjqcw0AmLxIaGP10UuGqg&amp;zoomwheel=false#2.33/36.27/-97.24)
