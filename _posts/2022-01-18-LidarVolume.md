@@ -22,7 +22,7 @@ This outputs a .las file that contains the same points as the input but now with
 2 - Ground
 
 Next step is to output a file with just the ground points. We can use the translate command again but this time flag (-f) a range filter of the 'classification' type:
-{% highlight c %}
+{% highlight powershell %}
 pdal translate in.las out.las -f range --filters.range.limits="Classification[2:2]"
 {% endhighlight %}
 
