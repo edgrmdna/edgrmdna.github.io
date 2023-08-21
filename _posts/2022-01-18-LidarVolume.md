@@ -7,7 +7,7 @@ categories:
   - website
 ---
 
-[Cerro San Luis](/assets/cerro-san-luis.jpg)
+[Cerro San Luis](/assets/cerro-san-luis.png)
 
 Step 1: Cleanse your lidar
 
