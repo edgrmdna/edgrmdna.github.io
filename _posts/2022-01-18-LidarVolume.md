@@ -62,4 +62,4 @@ __________
 Step 4: Calculate the Volume
 
 At this point, CloudCompare has a function called 'Compute 2.5 D Volume'. Specify your base height and a report will display the calculations. I went ahead and made a map to show my results:
-![](/assets/cerro-san-luis-vol.png)
+![Result](/assets/cerro-san-luis-vol.png)
