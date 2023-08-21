@@ -14,7 +14,9 @@ Step 1: Cleanse your lidar
 You gotta get rid of the trees and buildings before you do any sort of volumetric calc. So we want only the bare-ground points out of your lidar dataset.
 
 I cleaned my lidar with pdal. I used its built-in SMRF (Simple Morphological Filter) via the osgeo4w command line interface. It looked something like this:
+{% highlight powershell %}
 pdal translate in.las out.las smrf -v 4
+{% endhighlight %}
 
 This outputs a .las file that contains the same points as the input but now with a classification value for each point:
 
@@ -52,8 +54,9 @@ I arbitrarily clipped Cerro San Luis Obispo Mountain to elevations at or above 1
 
 Then run the pipeline via command line using PDAL2:
 
-
+{% highlight powershell %}
 pdal pipeline -i dtm.json
+{% endhighlight %}
 
 
 
