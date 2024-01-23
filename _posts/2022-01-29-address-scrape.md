@@ -7,9 +7,10 @@ categories:
   - website
 ---
 **Summary** 
-The idea behind this was to create a quick map of the restaurants featured on Guy Fieri's Diners, Drive in's, and Dives. Food Network hosts these restaurants on their website. So the workflow ends up being -> scrape addresses from Food Network's website using the Beautiful Soup python library -> geocode the addresses using Google's Address API -> submit the points to a mapbox webmap.
+<br>The idea behind this was to create a quick map of the restaurants featured on Guy Fieri's Diners, Drive in's, and Dives. Food Network hosts these restaurants on their website. So the workflow ends up being -> scrape addresses from Food Network's website using the Beautiful Soup python library -> geocode the addresses using Google's Address API -> submit the points to a mapbox webmap.
 
 **Scraping**
+<br>
 scrape.py
 <br>
 ```python
@@ -86,9 +87,9 @@ if __name__ == "__main__":
     main()
 ```
 
-The geocoding script uses google api to get latitude and longitude from an address. The csv from the previous script gets dumped to a pandas dataframe that gets updated with the lat/long values. It then gets dumped out to a separate csv.
-
 **Geocoding**
+<br> The geocoding script uses google api to get latitude and longitude from an address. The csv from the previous script gets dumped to a pandas dataframe that gets updated with the lat/long values. It then gets dumped out to a separate csv.
+<br>
 geocode.py
 
 ```python
