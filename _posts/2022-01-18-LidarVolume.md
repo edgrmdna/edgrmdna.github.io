@@ -11,7 +11,7 @@ categories:
 
 Step 1: Cleanse your lidar
 
-You gotta get rid of the trees and buildings before you do any sort of volumetric calc. So we want only the bare-ground points out of your lidar dataset.
+Get rid of the trees and buildings before you do any sort of terrain volume calculation. We want to work with only the bare-ground pointsin the lidar dataset.
 
 I cleaned my lidar with pdal. I used its built-in SMRF (Simple Morphological Filter) via the osgeo4w command line interface. It looked something like this:
 {% highlight powershell %}
@@ -34,8 +34,8 @@ pdal translate in.las out.las -f range --filters.range.limits="Classification[2:
 __________
 Step 2: Clip your data
 
-
-I arbitrarily clipped Cerro San Luis Obispo Mountain to elevations at or above 145m, using the contours as a guideline. I ended up converting the point cloud into a raster with PDAL's pipeline function. (The raster helps extract contours). Here's the pipeline I used:
+This step helps you extract contours out of your lidar data to find a proper base value to measuer the valume from
+I arbitrarily clipped Cerro San Luis Obispo Mountain to elevations at or above 145m, using the contours as a guideline. I ended up converting the point cloud into a raster with PDAL's pipeline function. (The raster helps extract contours). Here's the json pipeline I used:
 
 {% highlight json %}
 [
@@ -58,8 +58,10 @@ Then run the pipeline via command line using PDAL2:
 pdal pipeline -i dtm.json
 {% endhighlight %}
 
+Convert the raster to contours and pick a height at a low point in the terrain. 
+
 __________
 Step 4: Calculate the Volume
 
-At this point, CloudCompare has a function called 'Compute 2.5 D Volume'. Specify your base height and a report will display the calculations. I went ahead and made a map to show my results:
+Use CloudCompare has a function called 'Compute 2.5 D Volume'. Specify your base height and a report will display the calculations. I went ahead and made a map to show my results:
 ![Result](/assets/cerro-san-luis-vol.png)
