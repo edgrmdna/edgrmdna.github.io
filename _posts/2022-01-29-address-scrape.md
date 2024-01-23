@@ -6,11 +6,14 @@ categories:
   - github
   - website
 ---
+**Summary** 
+The idea behind this was to create a quick map of the restaurants featured on Guy Fieri's Diners, Drive in's, and Dives. Food Network hosts these restaurants on their website. So the workflow ends up being -> scrape addresses from Food Network's website using the Beautiful Soup python library -> geocode the addresses using Google's Address API -> submit the points to a mapbox webmap.
+
 **Scraping**
-The geocoding script uses google api to get latitude and longitude from an address. The csv from the previous script gets dumped to a pandas dataframe that gets updated with the lat/long values. It then gets dumped out to a separate csv.
 scrape.py
 <br>
 ```
+{% highlight python %}
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup as soup
 from pathlib import Path
@@ -82,12 +85,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+{% endhighlight %}
 ```
+
+The geocoding script uses google api to get latitude and longitude from an address. The csv from the previous script gets dumped to a pandas dataframe that gets updated with the lat/long values. It then gets dumped out to a separate csv.
 
 **Geocoding**
 geocode.py
 
 ```
+{% highlight python %}
 import urllib.request, urllib.parse, urllib.error
 import pandas as pd
 import json
@@ -161,6 +168,8 @@ for index, row in food_df.iterrows():
         print("continuing")
         continue
 food_df.to_csv('./geocoded_restaurants.csv')
+
+{% endhighlight %}
 ```
 [Map](https://api.mapbox.com/styles/v1/edgrmdna/cj0vm27w700c82slf0e5apkbi.html?title=false&amp;access_token=pk.eyJ1IjoiZWRncm1kbmEiLCJhIjoiRV8wRG1URSJ9.-Gjqcw0AmLxIaGP10UuGqg&amp;zoomwheel=false#2.33/36.27/-97.24)
 <iframe height="400px" src="https://api.mapbox.com/styles/v1/edgrmdna/cj0vm27w700c82slf0e5apkbi.html?title=false&amp;access_token=pk.eyJ1IjoiZWRncm1kbmEiLCJhIjoiRV8wRG1URSJ9.-Gjqcw0AmLxIaGP10UuGqg&amp;zoomwheel=false#2.33/36.27/-97.24" style="border: none;" title="Dark" width="100%"></iframe>
