@@ -276,25 +276,25 @@ class SplitLineAtVertices(object):
 
 ```
 **Toolbox**<br>
-<img src="assets/split-by-vertices/Toolbox.png" alt="drawing" width='50%'/>
+<img src="/assets/split-by-vertices/Toolbox.png" alt="drawing" width='50%'/>
 <!-- **![Toolbox](/assets/split-by-vertices/Toolbox.png)** -->
 
 **Tool**<br>
-<img src="assets/split-by-vertices/Tool.png" alt="drawing" width='50%'/>
+<img src="/assets/split-by-vertices/Tool.png" alt="drawing" width='50%'/>
 <!-- **![Tool](/assets/split-by-vertices/Tool.png)** -->
 
 **Lines before split**<br>
-<img src="assets/split-by-vertices/Line_Before.png" alt="drawing" width='50%'/>
+<img src="/assets/split-by-vertices/Line_Before.png" alt="drawing" width='50%'/>
 <!-- **![Lines Before Split](/assets/split-by-vertices/Line_Before.png)** -->
 
 **Lines after split**<br>
-<img src="assets/split-by-vertices/Line_After.png" alt="drawing" width='50%'/>
+<img src="/assets/split-by-vertices/Line_After.png" alt="drawing" width='50%'/>
 <!-- **![Lines After Split](/assets/split-by-vertices/Line_After.png)**-->
 
 **Polygon before split**<br>
-<img src="assets/split-by-vertices/Polygon_Before.png" alt="drawing" width='50%'/>
+<img src="/assets/split-by-vertices/Polygon_Before.png" alt="drawing" width='50%'/>
 <!-- **![Polygon Before Split](/assets/split-by-vertices/Polygon_Before.png)** -->
 
 **Polygon after split**<br>
-<img src="assets/split-by-vertices/Polygon_After.png" alt="drawing" width='50%'/>
+<img src="/assets/split-by-vertices/Polygon_After.png" alt="drawing" width='50%'/>
 <!-- **![Polygon After Split](/assets/split-by-vertices/Polygon_After.png)** -->
