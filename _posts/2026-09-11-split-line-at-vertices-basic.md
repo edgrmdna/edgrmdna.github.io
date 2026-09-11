@@ -276,11 +276,11 @@ class SplitLineAtVertices(object):
 
 ```
 **Toolbox**
-<img src = "/assets/split-by-vertices/Toolbox.png" alt=drawing" width='50%'/>
+<img src="/assets/split-by-vertices/Toolbox.png" alt=drawing" width='50%'/>
 <!-- **![Toolbox](/assets/split-by-vertices/Toolbox.png)** -->
 
 **Tool**
-<img src = "/assets/split-by-vertices/Tool.png" alt=drawing" width='50%'/>
+<img src="assets/split-by-vertices/Tool.png" alt=drawing" width='50%'/>
 <!-- **![Tool](/assets/split-by-vertices/Tool.png)** -->
 
 **Lines before split**
