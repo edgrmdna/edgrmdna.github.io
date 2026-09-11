@@ -10,3 +10,4 @@ title: "Posts"
 * [Los Angeles River Research Grade iNaturalist Observations](https://edgrmdna.github.io/leaflet-inaturalist-map/)
 * [Map Sample: Lake Cachuma Decadal Fire History](https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png)
 * [Map Sample: San Luis Obispo County Public Land Ownership](https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png)
+* [Split By Vertices Using A Basic ArcGIS Pro License](_posts/2026-09-11-split-line-at-vertices-basic.md)
