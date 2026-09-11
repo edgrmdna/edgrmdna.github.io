@@ -275,14 +275,22 @@ class SplitLineAtVertices(object):
         )
 
 ```
-**![Toolbox](/assets/split-by-vertices/Toolbox.png)**
+**Toolbox**
+<img src = "/assets/split-by-vertices/Toolbox.png" alt=drawing" width='50%'/>
+<!-- **![Toolbox](/assets/split-by-vertices/Toolbox.png)** -->
 
-**![Tool](/assets/split-by-vertices/Tool)**
+**Tool**
+<img src = "/assets/split-by-vertices/Tool.png" alt=drawing" width='50%'/>
+<!-- **![Tool](/assets/split-by-vertices/Tool.png)** -->
 
-**![Lines Before Split](/assets/split-by-vertices/Line_Before.png)**
+**Lines before split**
+<!-- **![Lines Before Split](/assets/split-by-vertices/Line_Before.png)** -->
 
-**![Lines After Split](/assets/split-by-vertices/Line_After.png)**
+**Lines after split**
+<!-- **![Lines After Split](/assets/split-by-vertices/Line_After.png)**-->
 
-**![Polygon Before Split](/assets/split-by-vertices/Polygon_Before.png)**
+**Polygon before split**
+<!-- **![Polygon Before Split](/assets/split-by-vertices/Polygon_Before.png)** -->
 
-**![Polygon After Split](/assets/split-by-vertices/Polygon_After.png)**
+**Polygon after split**
+<!-- **![Polygon After Split](/assets/split-by-vertices/Polygon_After.png)** -->
