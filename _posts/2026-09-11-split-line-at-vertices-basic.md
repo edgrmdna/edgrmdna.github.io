@@ -8,7 +8,7 @@ categories:
 ---
 
 **PURPOSE**
-This script will basically split lines and polygons in ArcGIS Pro in the same way that the Split By Vertices (Data Management) https://pro.arcgis.com/en/pro-app/3.6/tool-reference/data-management/split-line-at-vertices.htm tool will. It is much slower since it is not compiled but it gets the job done.
+This script will basically split lines and polygons in ArcGIS Pro in the same way that the [Split By Vertices (Data Management)](https://pro.arcgis.com/en/pro-app/3.6/tool-reference/data-management/split-line-at-vertices.htm) tool will. It is much slower since it is not compiled but it gets the job done.
 The ArcGIS Split By Vertices tool requires an advanced license. This version on requires a Basic license. I guess this is good for folks that use the basic ArcGIS tools and maybe sometimes need a tool from the advanced suite of tools (though not enough to justify paying for the Advanced license). 
 QGIS also has a version of this, so that is another free option. 
 
@@ -275,3 +275,14 @@ class SplitLineAtVertices(object):
         )
 
 ```
+**![Toolbox](/assets/split-by-vertices/Toolbox.png)**
+
+**![Tool](/assets/split-by-vertices/Tool)**
+
+**![Lines Before Split](/assets/split-by-vertices/Line_Before.png)**
+
+**![Lines After Split](/assets/split-by-vertices/Line_After.png)**
+
+**![Polygon Before Split](/assets/split-by-vertices/Polygon_Before.png)**
+
+**![Polygon After Split](/assets/split-by-vertices/Polygon_After.png)**
