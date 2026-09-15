@@ -14,9 +14,8 @@ title: "Posts"
 <br>
 <div class="image-container">
   <a href="_posts/2026-09-11-split-line-at-vertices-basic.md">
-  <img src="/assets/split-by-vertices/Polygon_After.png" style="filter: grayscale(100%);" alt="Scenic background view" style="width: 50%">
+  <img src="/assets/split-by-vertices/Polygon_After.png" style="filter: grayscale(100%);" alt="Scenic background view" style="width: 50%" style="float: right; margin-left: 15px;">
   <div class="overlay-text">
-    <h2><a href="_posts/2026-09-11-split-line-at-vertices-basic.md">Your Split By Vertices</a></h2>
+    <h4><a href="_posts/2026-09-11-split-line-at-vertices-basic.md">Your Split By Vertices</a></h4>
     <p>Add using a basic ArcGIS Pro license here.</p>
   </div>
-</div>
