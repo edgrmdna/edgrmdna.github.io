@@ -20,7 +20,7 @@ title: "Posts"
 <br>
 <div class="image-container">
   <a href="_posts/2026-09-11-split-line-at-vertices-basic.md">
-  <img src="/assets/split-by-vertices/Polygon_After.png" class="bw-image" style="width: 50%; float: right; margin-left: 15px;">
+  <img src="/assets/split-by-vertices/Polygon_After.png" style="filter: grayscale(100%); width: 50%; display: block; margin: 0 auto;">
   <div class="overlay-text">
     <h4><a href="_posts/2026-09-11-split-line-at-vertices-basic.md">Split By Vertices</a></h4>
     <p>Using a basic ArcGIS Pro license here.</p>
