@@ -11,3 +11,11 @@ title: "Posts"
 * [Map Sample: Lake Cachuma Decadal Fire History](https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png)
 * [Map Sample: San Luis Obispo County Public Land Ownership](https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png)
 * [Split By Vertices Using A Basic ArcGIS Pro License](_posts/2026-09-11-split-line-at-vertices-basic.md)
+<br>
+<div class="image-container">
+  <img src="/assets/split-by-vertices/Polygon_After.png" alt="Scenic background view">
+  <div class="overlay-text">
+    <h2>Your Split By Vertices</h2>
+    <p>Add using a basic ArcGIS Pro license here.</p>
+  </div>
+</div>
