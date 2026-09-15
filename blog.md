@@ -2,11 +2,6 @@
 layout: "default"
 title: "Posts"
 ---
-<style>
-  .bw-image {
-    filter: grayscale(100%);
-  }
-</style>
 
 * [Open Street Map Contributions Hotspot Map](http://yosmhm.neis-one.org/?edgrmdna)
 * [Lidar Volume Calculations](_posts/2022-01-18-LidarVolume.md)
@@ -19,7 +14,7 @@ title: "Posts"
 <br>
 <div class="image-container">
   <a href="_posts/2026-09-11-split-line-at-vertices-basic.md">
-  <img src="/assets/split-by-vertices/Polygon_After.png" class="bw-image" alt="Scenic background view" style="width: 50%">
+  <img src="/assets/split-by-vertices/Polygon_After.png" style="filter: grayscale(100%);" alt="Scenic background view" style="width: 50%">
   <div class="overlay-text">
     <h2><a href="_posts/2026-09-11-split-line-at-vertices-basic.md">Your Split By Vertices</a></h2>
     <p>Add using a basic ArcGIS Pro license here.</p>
