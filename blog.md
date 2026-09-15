@@ -17,11 +17,25 @@ title: "Posts"
 * [Map Sample: Lake Cachuma Decadal Fire History](https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png)
 * [Map Sample: San Luis Obispo County Public Land Ownership](https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png)
 * [Split By Vertices Using A Basic ArcGIS Pro License](_posts/2026-09-11-split-line-at-vertices-basic.md)
+  
+<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;"<div class="image-container" style="text-align: center;">
+  <a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png">
+    <img src="/maps/SLO_County_2026_Land_Ownership.png" style="filter: grayscale(100%); width: 50%; display: block; margin: 0 auto;">
+  </a>
+  <div class="overlay-text">
+    <h4><a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png">Map Sample</a></h4>
+    <p>San Luis Obispo County Public Land Ownership.</p>
+  </div>
+</div>
+
 <br>
-<div class="image-container">
+
+<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;"<div class="image-container" style="text-align: center;">
   <a href="_posts/2026-09-11-split-line-at-vertices-basic.md">
-  <img src="/assets/split-by-vertices/Polygon_After.png" style="filter: grayscale(100%); width: 50%; display: block; margin: 0 auto;">
+    <img src="/assets/split-by-vertices/Polygon_After.png" style="filter: grayscale(100%); width: 50%; display: block; margin: 0 auto;">
+  </a>
   <div class="overlay-text">
     <h4><a href="_posts/2026-09-11-split-line-at-vertices-basic.md">Split By Vertices</a></h4>
     <p>Using a basic ArcGIS Pro license here.</p>
   </div>
+</div>
