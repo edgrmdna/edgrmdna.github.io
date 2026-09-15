@@ -62,7 +62,7 @@ title: "Posts"
 
 <hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
   <a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png">
-    <img src="/assets/thumbnails/thumbnail-zoning.png" style="width: 50%; display: block; margin: 0 auto;">
+    <img src="/assets/thumbnails/thumbnail-zoning.png" style="width: 75%; display: block; margin: 0 auto;">
   </a>
   <div class="overlay-text" style="text-align: center;">
     <h4><a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png">Map Sample: San Luis Obispo County Public Land Ownership</a></h4>
