@@ -73,7 +73,7 @@ title: "Posts"
     <img src="/assets/thumbnails/thumbnail-split-vertices.png" style="filter: grayscale(100%); width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
   </a>
   <div class="overlay-text" style="text-align: center;">
-    <h4><a href="/_posts/2026-09-11-split-line-at-vertices-basic.md">Split By Vertices: Using a basic ArcGIS Pro license here</a></h4>
+    <h4><a href="/_posts/2026-09-11-split-line-at-vertices-basic.md">Code Sample: Split By Vertices Using a basic ArcGIS Pro license here</a></h4>
   </div>
 
 <hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
