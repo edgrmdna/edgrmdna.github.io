@@ -54,10 +54,10 @@ title: "Posts"
 
 <hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
   <a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png">
-    <img src="https://github.com/edgrmdna/edgrmdna.github.io/blob/master/assets/thumbnails/thumbnail-lake-cachuma-fire.png" style="width: 60%; display: block; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/assets/thumbnails/thumbnail-lake-cachuma-fire.png" style="width: 60%; display: block; margin: 0 auto;">
   </a>
   <div class="overlay-text" style="text-align: center;">
-    <h4><a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/assets/thumbnails/thumbnail-lake-cachuma-fire.png">Map Sample: Lake Cachuma Decadal Fire History</a></h4>
+    <h4><a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png">Map Sample: Lake Cachuma Decadal Fire History</a></h4>
   </div>
 
 <hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
