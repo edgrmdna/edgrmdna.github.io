@@ -9,71 +9,75 @@ title: "Posts"
   }
 </style>
 
-<!--
-* [Open Street Map Contributions Hotspot Map](http://yosmhm.neis-one.org/?edgrmdna)
-* [Lidar Volume Calculations](_posts/2022-01-18-LidarVolume.md)
-* [Scraping Addresses to Create a Map](_posts/2022-01-29-address-scrape.md)
-* [Downloading Landsat Composites from Google Earth Engine](_posts/2022-02-10-gee.md)
-* [Los Angeles River Research Grade iNaturalist Observations](https://edgrmdna.github.io/leaflet-inaturalist-map/)
-* [Map Sample: Lake Cachuma Decadal Fire History](https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png)
-* [Map Sample: San Luis Obispo County Public Land Ownership](https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png)
-* [Split By Vertices Using A Basic ArcGIS Pro License](_posts/2026-09-11-split-line-at-vertices-basic.md)
--->
 
-<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
-  <a href="/_posts/2022-01-29-address-scrape.md">
-    <img src="/assets/thumbnails/thumbnail-address-scrape.png" style="filter: grayscale(100%); width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
-  </a>
-  <div class="overlay-text" style="text-align: center;">
+<style>
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 960px;
+    margin: 40px auto;
+  }
+  .post-tile img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+  }
+  .post-tile h4 {
+    text-align: center;
+    font-size: 0.95em;
+    margin: 8px 0 0;
+  }
+  @media (max-width: 800px) { .post-grid { g2, 1fr); } }
+  @media (max-width: 500px) { .post-grid { grid-template-columns: 1fr; } }
+</style>
+
+<div class="post-grid">
+  <div class="post-tile">
+    <a href="/_posts/2022-01-29-address-scra
+      <img src="/assets/thumbnails/thumbnail-address-scrape.png" style="filter: grayscale(100%);">
+    </a>
     <h4><a href="/_posts/2022-01-29-address-scrape.md">Workflow: Address Scraping</a></h4>
   </div>
-
-<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
-  <a href="/_posts/2022-01-18-LidarVolume.md">
-    <img src="/assets/thumbnails/thumbnail-lidar-volumes.png" style="width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
-  </a>
-  <div class="overlay-text" style="text-align: center;">
+  <div class="post-tile">
+    <a href="/_posts/2022-01-18-LidarVolume.
+      <img src="/assets/thumbnails/thumbnail-lidar-volumes.png">
+    </a>
     <h4><a href="/_posts/2022-01-18-LidarVolume.md">Workflow: Lidar Volume Calculations</a></h4>
   </div>
-
-<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
-  <a href="/_posts/2022-02-10-gee.md">
-    <img src="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/master/assets/cdl.png" style="width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
-  </a>
-  <div class="overlay-text" style="text-align: center;">
+  <div class="post-tile">
+    <a href="/_posts/2022-02-10-gee.md">
+      <img src="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/master/assets/cdl.png">
+    </a>
     <h4><a href="/_posts/2022-02-10-gee.md">Code Sample: Download Landsat Composites from Google Earth Engine</a></h4>
   </div>
-
-<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
-  <a href="https://edgrmdna.github.io/leaflet-inaturalist-map/">
-    <img src="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/assets/thumbnails/thumbnail-la-river.png" style="width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
-  </a>
-  <div class="overlay-text" style="text-align: center;">
-    <h4><a href="https://edgrmdna.github.io/leaflet-inaturalist-map/">Webmap Sample: iNaturalist Observations - Los Angeles River</a></h4>
+  <div class="post-tile">
+    <a href="https://edgrmdna.github.io/leaf
+      <img src="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/assets/thumbnails/thumbnail-la-river.png">
+    </a>
+    <h4><a href="https://edgrmdna.github.io/map Sample: iNaturalist Observations - LosAngeles River</a></h4>
   </div>
-
-<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
-  <a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png">
-    <img src="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/assets/thumbnails/thumbnail-lake-cachuma-fire.png" style="width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
-  </a>
-  <div class="overlay-text" style="text-align: center;">
-    <h4><a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png">Map Sample: Lake Cachuma Decadal Fire History</a></h4>
+  <div class="post-tile">
+    <a href="https://raw.githubusercontent.co/refs/heads/master/maps/Lake_Cachuma_Decadal_Fire_History.png">
+      <img src="https://raw.githubusercontenb.io/refs/heads/master/assets/thumbnails/thumbnail-lake-cachuma-fire.png">
+    </a>
+    <h4><a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/Lake_Cachuma_Dec
+adal_Fire_History.png">Map Sample: Lake Cach/h4>
   </div>
-
-<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
-  <a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png">
-    <img src="/assets/thumbnails/thumbnail-zoning.png" style="width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
-  </a>
-  <div class="overlay-text" style="text-align: center;">
-    <h4><a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land_Ownership.png">Map Sample: San Luis Obispo County Public Land Ownership</a></h4>
+  <div class="post-tile">
+    <a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_Land
+_Ownership.png">
+      <img src="/assets/thumbnails/thumbnail-zoning.png">
+    </a>
+    <h4><a href="https://raw.githubusercontent.com/edgrmdna/edgrmdna.github.io/refs/heads/master/maps/SLO_County_2026_
+Land_Ownership.png">Map Sample: San Luis Obihip</a></h4>
   </div>
-
-<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
-  <a href="/_posts/2026-09-11-split-line-at-vertices-basic.md">
-    <img src="/assets/thumbnails/thumbnail-split-vertices.png" style="filter: grayscale(100%); width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
-  </a>
-  <div class="overlay-text" style="text-align: center;">
-    <h4><a href="/_posts/2026-09-11-split-line-at-vertices-basic.md">Code Sample: Split By Vertices Using a basic ArcGIS Pro license here</a></h4>
+  <div class="post-tile">
+    <a href="/_posts/2026-09-11-split-line-at-vertices-basic.md">
+      <img src="/assets/thumbnails/thumbnaililter: grayscale(100%);">
+    </a>
+    <h4><a href="/_posts/2026-09-11-split-li Sample: Split By Vertices Using a basicArcGIS Pro license here</a></h4>
   </div>
-
-<hr style="border: 0; height: 1px; background: #ccc; margin: 40px auto; width: 80%;">
+</div>
